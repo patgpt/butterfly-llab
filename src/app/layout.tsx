@@ -1,7 +1,8 @@
-import { geistMono, geistSans } from "@/app/fonts";
+
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import "./globals.css";
+import { fontMono, fontSans } from "@/app/fonts";
 
 
 
@@ -18,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(geistSans.variable, geistMono.variable, "antialiased")}
+        className={cn(fontSans.variable, fontMono.variable, "antialiased")}
       >
         {children}
       </body>
